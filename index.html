@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface app anim </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://anandchowdhary.github.io/ionicons-3-cdn/icons.css">
+    <link rel="stylesheet" href="./Front/css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="main_header">
+                <span data-fr>Formulaires d'inscription</span>
+
+                <div class="btn">
+                    <button data-click="en" id="btn_en">
+                        <img src="../img/united-kingdom.png" alt="united-kingdom" width="20" height="20">
+                        EN
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1 class="">Liste des enfants inscrits aux CLubs​</h1>
+            <p>Date du jour : 13/01/2024​</p>
+        </header>
+    </div>
+    <div class="container">
+        <div class="row tab-container">
+            <div class="tab-filter-container">
+                <li class="filter-btn active" data-tab="web-design">
+                    <ion-icon name="desktop-outline"></ion-icon>
+                    Listes des enfants
+                </li>
+                <li class="filter-btn" data-tab="web-development">
+                    <ion-icon name="logo-nodejs"></ion-icon>
+                    Inscription aux activités
+                </li>
+                <li class="filter-btn" data-tab="ux-design">
+                    <ion-icon name="diamond-outline"></ion-icon>
+                    Liste des activités
+                </li>
+                <!-- <li class="filter-btn" data-tab="app-development">
+              <ion-icon name="logo-google-playstore"></ion-icon>
+              App Development
+            </li> -->
+            </div>
+            <div class="tab-filter-item-container pl-0">
+                <div class="tab-item web-design select_tab">
+                    <div class="tab-content-right">
+                        <div class="content-comparison">
+                            <div class="container">
+
+                                <div class="line"></div>
+                                <table>
+                                    <thead>
+                                        <tr class="noline">
+                                            <th class="txt">
+                                                <h1 class="section-heading">Liste des enfants inscrits aux
+                                                    CLubs&ZeroWidthSpace;</h1>
+                                            </th>
+                                            <th class="product"> </th>
+                                            <th class="product pro"></th>
+                                            <th class="product"> </th>
+                                            <th class="product"> </th>
+                                            <th class="product"></th>
+                                        </tr>
+                                        <tr class="noline">
+                                            <th class="txt"></th>
+                                            <th class="price-info">
+                                                <h5>Prénom & nom </h5>
+                                                <!-- <div class="price-now"><span>$0</span>
+                                                    <p>FREE Trial</p>
+                                                    <a href="../DriverEasy_Setup.exe"
+                                                        onclick="ga('send', 'event', 'banner', 'click','HomeTableDownloadButton',1.00, {'nonInteraction': 1});">
+                                                        <button class="button">DOWNLOAD</button>
+                                                    </a>
+                                                </div> -->
+                                            </th>
+                                            <th class="price-info">
+                                                <h5>Genre</h5>
+                                                <!-- <div class="price-now"><span>$0</span>
+                                                    <p>FREE Trial</p>
+                                                    <a href="../DriverEasy_Setup.exe"
+                                                        onclick="ga('send', 'event', 'banner', 'click','HomeTableDownloadButton',1.00, {'nonInteraction': 1});">
+                                                        <button class="button">DOWNLOAD</button>
+                                                    </a>
+                                                </div> -->
+                                            </th>
+                                            <th class="price-info">
+                                                <h5>Date de naissance</h5>
+                                                <!-- <div class="price-now"><span>$0</span>
+                                                    <p>FREE Trial</p>
+                                                    <a href="../DriverEasy_Setup.exe"
+                                                        onclick="ga('send', 'event', 'banner', 'click','HomeTableDownloadButton',1.00, {'nonInteraction': 1});">
+                                                        <button class="button">DOWNLOAD</button>
+                                                    </a>
+                                                </div> -->
+                                            </th>
+                                            <th class="price-info">
+                                                <h5>Club</h5>
+                                                <!-- <div class="price-now"><span>$29.95</span>
+                                                    <p>3 PCs /&nbsp;Year</p>
+                                                    <a href="../buy.php?comeid=hometablepv"
+                                                        onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                        <button class="button">BUY NOW</button>
+                                                    </a>
+                                                </div> -->
+                                            </th>
+                                            <th class="price-info">
+                                                <h5>Free</h5>
+                                                <!-- <div class="price-now"><span>$99.50</span>
+                                                    <p>50 PCs&nbsp;/&nbsp;3 Days</p>
+                                                    <a href="../buy.php?comeid=hometabletv"
+                                                        onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                        <button class="button">BUY NOW</button>
+                                                    </a>
+                                                </div> -->
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="txt">Automatically detect missing, outdated or mismatched drivers
+                                            </td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="FREE Trial"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">Update drivers one-by-one</td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="FREE Trial"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">All drivers certified
+                                                <a href="#certified">
+                                                    <div class="tooltip fright" style="cursor: pointer;"></div>
+                                                </a>
+                                            </td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="FREE Trial"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">View detailed hardware info with embed CPU-Z</td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="FREE Trial"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">No internet? – Scan offline then download the right network
+                                                driver on another PC</td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="FREE Trial"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">Commercial use</td>
+                                            <td></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">One click to update all drivers</td>
+                                            <td></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">Download server bandwidth</td>
+                                            <td>Common</td>
+                                            <td>Dedicated 1000M Internet Connection</td>
+                                            <td>Dedicated 1000M Internet Connection</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">High speed download</td>
+                                            <td></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">Estimated download speed *
+                                                <div class="tooltip fright"><span class="tooltiptext tooltip-top">* The
+                                                        actual download speed differs from broadband speeds, ISPs, the
+                                                        countries you are in, and others.</span></div>
+                                            </td>
+                                            <td>40KB – 80KB</td>
+                                            <td>500KB – 20MB</td>
+                                            <td>500KB – 20MB</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">Create a restore point automatically without losing any data
+                                            </td>
+                                            <td></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">Automatically protect your computer by doing a full backup
+                                                of your system</td>
+                                            <td></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">Safe restore: roll back to the previously installed driver
+                                            </td>
+                                            <td></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">Remove a driver – just click Uninstall</td>
+                                            <td></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">Update to the latest version automatically</td>
+                                            <td></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="txt">Professional technical support – fix your PC problems</td>
+                                            <td></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
+                                                    width="20" height="20" alt="PRO Features"></td>
+                                        </tr>
+                                        <tr class="noline">
+                                            <th class="txt"></th>
+                                            <th class="price-info">
+                                                <div class="price-now">
+                                                    <a href="../DriverEasy_Setup.exe"
+                                                        onclick="ga('send', 'event', 'banner', 'click','HomeTableDownloadButton',1.00, {'nonInteraction': 1});">
+                                                        <button class="button">DOWNLOAD</button>
+                                                    </a>
+                                                </div>
+                                            </th>
+                                            <th class="price-info">
+                                                <div class="price-now">
+                                                    <a href="../buy.php?comid=hometable"
+                                                        onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                        <button class="button">BUY NOW</button>
+                                                    </a>
+                                                </div>
+                                            </th>
+                                            <th class="price-info">
+                                                <div class="price-now">
+                                                    <a href="../buy.php?comid=hometable"
+                                                        onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                        <button class="button">BUY NOW</button>
+                                                    </a>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <a href="#!" class="btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="tab-item web-development">
+                    <div class="tab-content-left">
+                        <h1 class="tab-heading">Web Development</h1>
+                        <div class="row tab-container">
+                            <div class="tab-filter-container">
+                                <li class="filter-btn-club active" data-tab="club-baby">
+                                    <ion-icon name="desktop-outline" role="img" class="md hydrated"
+                                        aria-label="desktop outline"></ion-icon>
+                                    club baby
+                                </li>
+                                <li class="filter-btn-club" data-tab="club-kids">
+                                    <ion-icon name="logo-nodejs" role="img" class="md hydrated"
+                                        aria-label="logo nodejs"></ion-icon>
+                                    club kids
+                                </li>
+                                <li class="filter-btn-club" data-tab="club-junior">
+                                    <ion-icon name="diamond-outline" role="img" class="md hydrated"
+                                        aria-label="diamond outline"></ion-icon>
+                                    club junior
+                                </li>
+                                <li class="filter-btn-club" data-tab="club-teens">
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    club teens
+                                </li>
+                                <li class="filter-btn-club" data-tab="club-ados">
+                                    <ion-icon name="logo-google-playstore"></ion-icon>
+                                    Club ados
+                                </li>
+                            </div>
+                            <div class="tab-filter-item-club-container pl-0">
+                                <div class="tab-item-club club-baby select_tab">
+                                    <h1>club-baby</h1>
+                                </div>
+                                <div class="tab-item-club club-kids">
+                                    <h1>club kids</h1>
+                                </div>
+                                <div class="tab-item-club club-junior">
+                                    <h1>club junior</h1>
+                                </div>
+                                <div class="tab-item-club club-teens">
+                                    <h1>club teens</h1>
+                                </div>
+                                <div class="tab-item-club  club-ados">
+                                    <h1> club ados</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="paragraph">
+                            Web Development consists of two segments front end development
+                            and backend development. Front-end Developers work with visual
+                            designs of a website and build the sites with using of code
+                        </p>
+                        <a href="#!" class="btn-primary">Read More</a>
+                    </div>
+
+                </div>
+                <div class="tab-item ux-design">
+                    <div class="tab-content-left">
+                        <img src="images/ux-ui.jpg" alt="UI/UX Design" class="tab-img" />
+                    </div>
+                    <div class="tab-content-right">
+                        <h1 class="tab-heading">UI UX Design</h1>
+                        <p class="paragraph">
+                            This course UX & UI Design is designed for those people, who
+                            wants to design anything to keep users on first priority and
+                            working on to make them happy.
+                        </p>
+                        <a href="#!" class="btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="tab-item app-development">
+                    <div class="tab-content-left">
+                        <h1 class="tab-heading">App Development</h1>
+                        <p class="paragraph">
+                            With the world going mobile, the importance of apps is
+                            increasing by the day. App development hence refers to the
+                            creation of applications to be used on mobile devices.
+                        </p>
+                        <a href="#!" class="btn-primary">Read More</a>
+                    </div>
+                    <div class="tab-content-right">
+                        <img src="images/app development.png" alt="UI/UX Design" class="tab-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./Front/js/index.js"></script>
+</body>
+
+</html>
