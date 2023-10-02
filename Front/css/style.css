@@ -105,7 +105,7 @@ h1,
   font-family: "BelyDisplay";
   color: #006f77;
   margin: 3rem 0;
-  font-size: 4rem;
+  font-size: 2.9rem;
   padding-bottom: 0.7rem;
   position: relative;
   display: inline-block;
@@ -217,6 +217,23 @@ h1,
 }
 
 /* Home - Compare products */
+.table_top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.table_top_buttons ul{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+input#input-date, select#select-club, button#btn-print, button#btn-download  {
+  width: 120px;
+  padding: 15px 10px;
+  border: 1px solid #006f77;
+  border-radius: 5px;
+}
 .content-comparison h2 {
   text-align: left;
 }
