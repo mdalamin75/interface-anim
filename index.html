@@ -33,7 +33,18 @@
     <div class="container">
         <header>
             <h1 class="">Liste des enfants inscrits aux CLubs​</h1>
-            <p>Date du jour : 13/01/2024​</p>
+            <div class="d-flex gap-2 align-items-center">
+                <div>
+                    <p>Date du jour : 13/01/2024​</p>
+                </div>
+                <div class="table_top_buttons">
+                    <ul>
+                        <li>
+                            <input type="date" id="input-date">
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
     </div>
     <div class="container">
@@ -74,9 +85,9 @@
                                                 <input type="date" id="input-date">
                                             </li>
                                             <li>
-                                                <select id="select-club">
+                                                <select multiple data-placeholder="Add tools">
                                                     <option value="none">None</option>
-                                                    <option value="teen">Teen</option>
+                                                    <option selected value="teen">Teen</option>
                                                     <option value="ados">Ados</option>
                                                     <option value="junior">Junior</option>
                                                     <option value="kid">Kid</option>
@@ -84,20 +95,20 @@
                                             </li>
                                             <li>
                                                 <button id="btn-print" onclick="window.print()">
-                                                    <i class="fa-solid fa-print">print</i>
                                                     <span>Print</span>
+                                                    <i class="fa-solid fa-print">print</i>
                                                 </button>
                                             </li>
                                             <li>
                                                 <button id="btn-download">
-                                                    <i class="fa-solid fa-cloud-arrow-down">download</i>
                                                     <span>Download</span>
+                                                    <i class="fa-solid fa-cloud-arrow-down">download</i>
                                                 </button>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <table>
+                                <table class="tab_1_table">
                                     <thead>
                                         <!-- <tr class="noline">
                                             <th class="txt">
@@ -165,31 +176,21 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="txt">Automatically detect missing, outdated or mismatched drivers
+                                            <td class="txt">First Name
                                             </td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="FREE Trial"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Test</td>
                                         </tr>
                                         <tr>
-                                            <td class="txt">Update drivers one-by-one</td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="FREE Trial"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td class="txt">Last Name</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>Test</td>
                                         </tr>
                                         <tr>
                                             <td class="txt">All drivers certified
@@ -197,69 +198,60 @@
                                                     <div class="tooltip fright" style="cursor: pointer;"></div>
                                                 </a>
                                             </td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="FREE Trial"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">View detailed hardware info with embed CPU-Z</td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="FREE Trial"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">No internet? – Scan offline then download the right network
                                                 driver on another PC</td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="FREE Trial"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">Commercial use</td>
                                             <td></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">One click to update all drivers</td>
                                             <td></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">Download server bandwidth</td>
-                                            <td>Common</td>
-                                            <td>Dedicated 1000M Internet Connection</td>
-                                            <td>Dedicated 1000M Internet Connection</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">High speed download</td>
                                             <td></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">Estimated download speed *
@@ -267,60 +259,62 @@
                                                         actual download speed differs from broadband speeds, ISPs, the
                                                         countries you are in, and others.</span></div>
                                             </td>
-                                            <td>40KB – 80KB</td>
-                                            <td>500KB – 20MB</td>
-                                            <td>500KB – 20MB</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">Create a restore point automatically without losing any data
                                             </td>
                                             <td></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">Automatically protect your computer by doing a full backup
                                                 of your system</td>
                                             <td></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">Safe restore: roll back to the previously installed driver
                                             </td>
                                             <td></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">Remove a driver – just click Uninstall</td>
                                             <td></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">Update to the latest version automatically</td>
                                             <td></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td class="txt">Professional technical support – fix your PC problems</td>
                                             <td></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
-                                            <td><img src="../wp-content/themes/drivereasy/images/common/note-success.png"
-                                                    width="20" height="20" alt="PRO Features"></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr class="noline">
                                             <th class="txt"></th>
@@ -329,6 +323,22 @@
                                                     <a href="../DriverEasy_Setup.exe"
                                                         onclick="ga('send', 'event', 'banner', 'click','HomeTableDownloadButton',1.00, {'nonInteraction': 1});">
                                                         <button class="button">DOWNLOAD</button>
+                                                    </a>
+                                                </div>
+                                            </th>
+                                            <th class="price-info">
+                                                <div class="price-now">
+                                                    <a href="../buy.php?comid=hometable"
+                                                        onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                        <button class="button">BUY NOW</button>
+                                                    </a>
+                                                </div>
+                                            </th>
+                                            <th class="price-info">
+                                                <div class="price-now">
+                                                    <a href="../buy.php?comid=hometable"
+                                                        onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                        <button class="button">BUY NOW</button>
                                                     </a>
                                                 </div>
                                             </th>
@@ -387,19 +397,1554 @@
                             </div>
                             <div class="tab-filter-item-club-container pl-0">
                                 <div class="tab-item-club club-baby select_tab">
-                                    <h1>club-baby</h1>
+                                    <div class="content-comparison">
+                                        <div class="container">
+            
+                                            <div class="line"></div>
+                                            <div class="table_top">
+                                                <div>
+                                                    <h1 class="section-heading">Liste des enfants inscrits aux
+                                                        CLubs&ZeroWidthSpace;</h1>
+                                                </div>
+                                                <div class="table_top_buttons">
+                                                    <ul>
+                                                        <!-- <li>
+                                                            <input type="date" id="input-date">
+                                                        </li> -->
+                                                        <!-- <li>
+                                                            <select id="select-club">
+                                                                <option value="none">None</option>
+                                                                <option value="teen">Teen</option>
+                                                                <option value="ados">Ados</option>
+                                                                <option value="junior">Junior</option>
+                                                                <option value="kid">Kid</option>
+                                                            </select>
+                                                        </li>
+                                                        <li>
+                                                            <button id="btn-print" onclick="window.print()">
+                                                                <i class="fa-solid fa-print">print</i>
+                                                                <span>Print</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button id="btn-download">
+                                                                <i class="fa-solid fa-cloud-arrow-down">download</i>
+                                                                <span>Download</span>
+                                                            </button>
+                                                        </li> -->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <table>
+                                                <thead>
+                                                    <tr class="noline">
+                                                        <th class="txt"></th>
+                                                        <th class="price-info">
+                                                            <h5>Prénom & nom </h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Genre</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Date de naissance</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="txt">First Name
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Last Name</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">All drivers certified
+                                                            <a href="#certified">
+                                                                <div class="tooltip fright" style="cursor: pointer;"></div>
+                                                            </a>
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">View detailed hardware info with embed CPU-Z</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">No internet? – Scan offline then download the right network
+                                                            driver on another PC</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Commercial use</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">One click to update all drivers</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Download server bandwidth</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">High speed download</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Estimated download speed *
+                                                            <div class="tooltip fright"><span class="tooltiptext tooltip-top">* The
+                                                                    actual download speed differs from broadband speeds, ISPs, the
+                                                                    countries you are in, and others.</span></div>
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Create a restore point automatically without losing any data
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Automatically protect your computer by doing a full backup
+                                                            of your system</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Safe restore: roll back to the previously installed driver
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Remove a driver – just click Uninstall</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Update to the latest version automatically</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Professional technical support – fix your PC problems</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <!-- <tr class="noline">
+                                                        <th class="txt"></th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../DriverEasy_Setup.exe"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableDownloadButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">DOWNLOAD</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../buy.php?comid=hometable"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">BUY NOW</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../buy.php?comid=hometable"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">BUY NOW</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-item-club club-kids">
-                                    <h1>club kids</h1>
+                                    <div class="content-comparison">
+                                        <div class="container">
+            
+                                            <div class="line"></div>
+                                            <div class="table_top">
+                                                <div>
+                                                    <h1 class="section-heading">Liste des enfants inscrits aux
+                                                        CLubs&ZeroWidthSpace;</h1>
+                                                </div>
+                                                <div class="table_top_buttons">
+                                                    <ul>
+                                                        <li>
+                                                            <input type="date" id="input-date">
+                                                        </li>
+                                                        <li>
+                                                            <select id="select-club">
+                                                                <option value="none">None</option>
+                                                                <option value="teen">Teen</option>
+                                                                <option value="ados">Ados</option>
+                                                                <option value="junior">Junior</option>
+                                                                <option value="kid">Kid</option>
+                                                            </select>
+                                                        </li>
+                                                        <li>
+                                                            <button id="btn-print" onclick="window.print()">
+                                                                <i class="fa-solid fa-print">print</i>
+                                                                <span>Print</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button id="btn-download">
+                                                                <i class="fa-solid fa-cloud-arrow-down">download</i>
+                                                                <span>Download</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <table>
+                                                <thead>
+                                                    <tr class="noline">
+                                                        <th class="txt"></th>
+                                                        <th class="price-info">
+                                                            <h5>Prénom & nom </h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Genre</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Date de naissance</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="txt">First Name
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Last Name</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">All drivers certified
+                                                            <a href="#certified">
+                                                                <div class="tooltip fright" style="cursor: pointer;"></div>
+                                                            </a>
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">View detailed hardware info with embed CPU-Z</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">No internet? – Scan offline then download the right network
+                                                            driver on another PC</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Commercial use</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">One click to update all drivers</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Download server bandwidth</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">High speed download</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Estimated download speed *
+                                                            <div class="tooltip fright"><span class="tooltiptext tooltip-top">* The
+                                                                    actual download speed differs from broadband speeds, ISPs, the
+                                                                    countries you are in, and others.</span></div>
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Create a restore point automatically without losing any data
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Automatically protect your computer by doing a full backup
+                                                            of your system</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Safe restore: roll back to the previously installed driver
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Remove a driver – just click Uninstall</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Update to the latest version automatically</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Professional technical support – fix your PC problems</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <!-- <tr class="noline">
+                                                        <th class="txt"></th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../DriverEasy_Setup.exe"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableDownloadButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">DOWNLOAD</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../buy.php?comid=hometable"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">BUY NOW</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../buy.php?comid=hometable"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">BUY NOW</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-item-club club-junior">
-                                    <h1>club junior</h1>
+                                    <div class="content-comparison">
+                                        <div class="container">
+            
+                                            <div class="line"></div>
+                                            <div class="table_top">
+                                                <div>
+                                                    <h1 class="section-heading">Liste des enfants inscrits aux
+                                                        CLubs&ZeroWidthSpace;</h1>
+                                                </div>
+                                                <div class="table_top_buttons">
+                                                    <ul>
+                                                        <li>
+                                                            <input type="date" id="input-date">
+                                                        </li>
+                                                        <li>
+                                                            <select id="select-club">
+                                                                <option value="none">None</option>
+                                                                <option value="teen">Teen</option>
+                                                                <option value="ados">Ados</option>
+                                                                <option value="junior">Junior</option>
+                                                                <option value="kid">Kid</option>
+                                                            </select>
+                                                        </li>
+                                                        <li>
+                                                            <button id="btn-print" onclick="window.print()">
+                                                                <i class="fa-solid fa-print">print</i>
+                                                                <span>Print</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button id="btn-download">
+                                                                <i class="fa-solid fa-cloud-arrow-down">download</i>
+                                                                <span>Download</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <table>
+                                                <thead>
+                                                    <tr class="noline">
+                                                        <th class="txt"></th>
+                                                        <th class="price-info">
+                                                            <h5>Prénom & nom </h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Genre</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Date de naissance</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="txt">First Name
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Last Name</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">All drivers certified
+                                                            <a href="#certified">
+                                                                <div class="tooltip fright" style="cursor: pointer;"></div>
+                                                            </a>
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">View detailed hardware info with embed CPU-Z</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">No internet? – Scan offline then download the right network
+                                                            driver on another PC</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Commercial use</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">One click to update all drivers</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Download server bandwidth</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">High speed download</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Estimated download speed *
+                                                            <div class="tooltip fright"><span class="tooltiptext tooltip-top">* The
+                                                                    actual download speed differs from broadband speeds, ISPs, the
+                                                                    countries you are in, and others.</span></div>
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Create a restore point automatically without losing any data
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Automatically protect your computer by doing a full backup
+                                                            of your system</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Safe restore: roll back to the previously installed driver
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Remove a driver – just click Uninstall</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Update to the latest version automatically</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Professional technical support – fix your PC problems</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <!-- <tr class="noline">
+                                                        <th class="txt"></th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../DriverEasy_Setup.exe"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableDownloadButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">DOWNLOAD</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../buy.php?comid=hometable"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">BUY NOW</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../buy.php?comid=hometable"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">BUY NOW</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-item-club club-teens">
-                                    <h1>club teens</h1>
+                                    <div class="content-comparison">
+                                        <div class="container">
+            
+                                            <div class="line"></div>
+                                            <div class="table_top">
+                                                <div>
+                                                    <h1 class="section-heading">Liste des enfants inscrits aux
+                                                        CLubs&ZeroWidthSpace;</h1>
+                                                </div>
+                                                <div class="table_top_buttons">
+                                                    <ul>
+                                                        <li>
+                                                            <input type="date" id="input-date">
+                                                        </li>
+                                                        <li>
+                                                            <select id="select-club">
+                                                                <option value="none">None</option>
+                                                                <option value="teen">Teen</option>
+                                                                <option value="ados">Ados</option>
+                                                                <option value="junior">Junior</option>
+                                                                <option value="kid">Kid</option>
+                                                            </select>
+                                                        </li>
+                                                        <li>
+                                                            <button id="btn-print" onclick="window.print()">
+                                                                <i class="fa-solid fa-print">print</i>
+                                                                <span>Print</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button id="btn-download">
+                                                                <i class="fa-solid fa-cloud-arrow-down">download</i>
+                                                                <span>Download</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <table>
+                                                <thead>
+                                                    <tr class="noline">
+                                                        <th class="txt"></th>
+                                                        <th class="price-info">
+                                                            <h5>Prénom & nom </h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Genre</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Date de naissance</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="txt">First Name
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Last Name</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">All drivers certified
+                                                            <a href="#certified">
+                                                                <div class="tooltip fright" style="cursor: pointer;"></div>
+                                                            </a>
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">View detailed hardware info with embed CPU-Z</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">No internet? – Scan offline then download the right network
+                                                            driver on another PC</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Commercial use</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">One click to update all drivers</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Download server bandwidth</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">High speed download</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Estimated download speed *
+                                                            <div class="tooltip fright"><span class="tooltiptext tooltip-top">* The
+                                                                    actual download speed differs from broadband speeds, ISPs, the
+                                                                    countries you are in, and others.</span></div>
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Create a restore point automatically without losing any data
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Automatically protect your computer by doing a full backup
+                                                            of your system</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Safe restore: roll back to the previously installed driver
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Remove a driver – just click Uninstall</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Update to the latest version automatically</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Professional technical support – fix your PC problems</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <!-- <tr class="noline">
+                                                        <th class="txt"></th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../DriverEasy_Setup.exe"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableDownloadButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">DOWNLOAD</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../buy.php?comid=hometable"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">BUY NOW</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../buy.php?comid=hometable"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">BUY NOW</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-item-club  club-ados">
-                                    <h1> club ados</h1>
+                                    <div class="content-comparison">
+                                        <div class="container">
+            
+                                            <div class="line"></div>
+                                            <div class="table_top">
+                                                <div>
+                                                    <h1 class="section-heading">Liste des enfants inscrits aux
+                                                        CLubs&ZeroWidthSpace;</h1>
+                                                </div>
+                                                <div class="table_top_buttons">
+                                                    <ul>
+                                                        <li>
+                                                            <input type="date" id="input-date">
+                                                        </li>
+                                                        <li>
+                                                            <select id="select-club">
+                                                                <option value="none">None</option>
+                                                                <option value="teen">Teen</option>
+                                                                <option value="ados">Ados</option>
+                                                                <option value="junior">Junior</option>
+                                                                <option value="kid">Kid</option>
+                                                            </select>
+                                                        </li>
+                                                        <li>
+                                                            <button id="btn-print" onclick="window.print()">
+                                                                <i class="fa-solid fa-print">print</i>
+                                                                <span>Print</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button id="btn-download">
+                                                                <i class="fa-solid fa-cloud-arrow-down">download</i>
+                                                                <span>Download</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <table>
+                                                <thead>
+                                                    <tr class="noline">
+                                                        <th class="txt"></th>
+                                                        <th class="price-info">
+                                                            <h5>Prénom & nom </h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Genre</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Date de naissance</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Club</h5>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <h5>Free</h5>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="txt">First Name
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Last Name</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">All drivers certified
+                                                            <a href="#certified">
+                                                                <div class="tooltip fright" style="cursor: pointer;"></div>
+                                                            </a>
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">View detailed hardware info with embed CPU-Z</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">No internet? – Scan offline then download the right network
+                                                            driver on another PC</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Commercial use</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>             
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">One click to update all drivers</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Download server bandwidth</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">High speed download</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Estimated download speed *
+                                                            <div class="tooltip fright"><span class="tooltiptext tooltip-top">* The
+                                                                    actual download speed differs from broadband speeds, ISPs, the
+                                                                    countries you are in, and others.</span></div>
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Create a restore point automatically without losing any data
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Automatically protect your computer by doing a full backup
+                                                            of your system</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Safe restore: roll back to the previously installed driver
+                                                        </td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Remove a driver – just click Uninstall</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Update to the latest version automatically</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="txt">Professional technical support – fix your PC problems</td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                        <td><input type="radio" name="" id=""></td>
+                                                    </tr>
+                                                    <!-- <tr class="noline">
+                                                        <th class="txt"></th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../DriverEasy_Setup.exe"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableDownloadButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">DOWNLOAD</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../buy.php?comid=hometable"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">BUY NOW</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                        <th class="price-info">
+                                                            <div class="price-now">
+                                                                <a href="../buy.php?comid=hometable"
+                                                                    onclick="ga('send', 'event', 'banner', 'click','HomeTableBuyButton',1.00, {'nonInteraction': 1});">
+                                                                    <button class="button">BUY NOW</button>
+                                                                </a>
+                                                            </div>
+                                                        </th>
+                                                    </tr> -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -443,6 +1988,8 @@
             </div>
         </div>
     </div>
+    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
         integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
